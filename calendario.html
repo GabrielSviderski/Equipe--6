@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário de Aulas</title>
+    <link rel="stylesheet" href="calendario.css">
+</head>
+<body>
+    <div id="app-container">
+        <div class="container">
+            <header>
+                <h1>Calendário de Aulas</h1>
+            </header>
+            <div class="main-content">
+                <div class="calendario-container">
+                    <div class="year-control">
+                        <button id="prev-year">←</button>
+                        <span id="current-year">2024</span>
+                        <button id="next-year">→</button>
+                    </div>
+                    <div id="meses"></div>
+                </div>
+
+                <div class="sidebar">
+                    <h3>Tipos de Atividade</h3>
+                    <div class="sections">
+                        <button id="aulas-btn">Aulas</button>
+                        <button id="trabalhos-btn">Trabalhos</button>
+                        <button id="provas-btn">Provas</button>
+                    </div>
+                    
+                    <h3>Ações de Notas</h3>
+                    <div class="actions">
+                        <textarea id="note" placeholder="Anotações do dia selecionado"></textarea>
+                        <div class="save-download">
+                            <button id="save-note">Salvar</button>
+                            <button id="download-notes">Baixar</button>
+                        </div>
+                        <div class="delete-reset">
+                            <button id="reset-notes">Resetar Tudo</button>
+                        </div>
+                    </div>
+
+                    <div id="note-content" class="note-content"></div>
+
+                    <div class="confirm-actions">
+                        <h3>Status de Participação</h3>
+                        <button id="confirm-participation">✔️ Confirmar Participação</button>
+                        <button id="mark-absence" class="absent">❌ Falta</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="calendario.js"></script>
+</body>
+</html>
